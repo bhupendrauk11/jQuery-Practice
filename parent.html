@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .p1{
+            margin: 20px;
+            padding: 30px;
+            display: block;
+            border: 2px solid lightgray;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="p1" style="height: 500px;">(div)
+        <ul>(ul)
+            <li>li</li>
+            <span>span</span>
+        </ul>
+    </div>
+</body>
+<script>
+    $(document).ready(function(){
+        $("span").parent().css({"color":"red","border":"2px solid green"});
+    });
+</script>
+</html>
